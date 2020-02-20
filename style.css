@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+/*****************************************************
+                       CURRENT WEATHER
+******************************************************/
+
+.wind-water{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+}
+
+.sunrise-sunset{
+    display: flex;
+    flex-direction: row;
+}
+
+/*****************************************************
+                            END
+******************************************************/
+
+/*****************************************************
+                       BUS INFORMATION
+******************************************************/
+
+.departure-container{
+    
+}
+
+.bus li{
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+.bus li img{
+    width: 25px;
+    height: 25px;
+}
+
+.bus-number{
+    background-color: rgb(224, 147, 2);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.stop-name{
+    margin-bottom: 10px;
+}
+
+.departureMins{
+    margin-left: 10px;
+}
+
+/*****************************************************
+                            END
+******************************************************/

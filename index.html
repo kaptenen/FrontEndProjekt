@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Magic Mirror</title>
+</head>
+
+<body>
+    <!--------------------CURRENT WEATHER----------------->
+    <div class="current-weather">
+
+        <div class="wind-water">
+            <img src="weatherImg/wind.svg" alt="Wind icon" height="30px" width="30px">
+            <h4 id="wind"></h4>
+            <img src="weatherImg/water.svg" alt="Water temp icon" height="30px" width="30px">
+            <h4 id="water"></h4>
+        </div>
+
+        <div class="sunrise-sunset">
+            <div class="sunrise">
+                <img src="weatherImg/sunrise.svg" alt="Sunrise icon" height="30px" width="30px">
+                <p id="sunrise"></p>
+            </div>
+            <div class="sunset">
+                <img src="weatherImg/sunset.svg" alt="Sunset icon" height="30px" width="30px">
+                <p id="sunset"></p>
+            </div>
+        </div>
+
+        <h2 id="city-name"></h2>
+        <h2 id="temp"></h2>
+        <h2 id="weather"></h2>
+        <div class="weather-icon">
+            <img id="current-weather" src="" alt="Current weather icon" height="50px" width="50px">
+        </div>
+        <h2 id="weather-description"></h2>
+
+    </div>
+    <!--------------------END CURRENT WEATHER---------------->
+
+    <!--------------------TIME---------------->
+    <div class="time">
+        <h2 id="current-time"></h2>
+        <h3 id="date"></h3>
+    </div>
+    <!--------------------END TIME---------------->
+
+    <!--------------------BUSES---------------->
+    <div class="main-bus-div">
+        <div class="bus-stop1">
+            <h3 class="stop-name">Eriksbergsdockan</h3>
+
+            <div class="bus-info">
+                <div class="departure-container">
+                    <ul class="bus">
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info0" class="bus-number"></p>
+                            <p id="departure-time0"></p>
+                            <p id="dep-min0" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info1" class="bus-number"></p>
+                            <p id="departure-time1"></p>
+                            <p id="dep-min1" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info2" class="bus-number"></p>
+                            <p id="departure-time2"></p>
+                            <p id="dep-min2" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info3" class="bus-number"></p>
+                            <p id="departure-time3"></p>
+                            <p id="dep-min3" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info4" class="bus-number"></p>
+                            <p id="departure-time4"></p>
+                            <p id="dep-min4" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info5" class="bus-number"></p>
+                            <p id="departure-time5"></p>
+                            <p id="dep-min5" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info6" class="bus-number"></p>
+                            <p id="departure-time6"></p>
+                            <p id="dep-min6" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info7" class="bus-number"></p>
+                            <p id="departure-time7"></p>
+                            <p id="dep-min7" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info8" class="bus-number"></p>
+                            <p id="departure-time8"></p>
+                            <p id="dep-min8" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info9" class="bus-number"></p>
+                            <p id="departure-time9"></p>
+                            <p id="dep-min9" class="departureMins"></p>
+                        </li>
+                        <li>
+                            <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                            <p id="bus-info10" class="bus-number"></p>
+                            <p id="departure-time10"></p>
+                            <p id="dep-min10" class="departureMins"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bus-stop2">
+            <h3 class="stop-name">Eriksbergstorget</h3>
+            <div class="bus-info">
+
+                <ul class="bus">
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo0" class="bus-number"></p>
+                        <p id="departureTime0"></p>
+                        <p id="departureMin0" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo1" class="bus-number"></p>
+                        <p id="departureTime1"></p>
+                        <p id="departureMin1" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo2" class="bus-number"></p>
+                        <p id="departureTime2"></p>
+                        <p id="departureMin2" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo3" class="bus-number"></p>
+                        <p id="departureTime3"></p>
+                        <p id="departureMin3" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo4" class="bus-number"></p>
+                        <p id="departureTime4"></p>
+                        <p id="departureMin4" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo5" class="bus-number"></p>
+                        <p id="departureTime5"></p>
+                        <p id="departureMin5" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo6" class="bus-number"></p>
+                        <p id="departureTime6"></p>
+                        <p id="departureMin6" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo7" class="bus-number"></p>
+                        <p id="departureTime7"></p>
+                        <p id="departureMin7" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo8" class="bus-number"></p>
+                        <p id="departureTime8"></p>
+                        <p id="departureMin8" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo9" class="bus-number"></p>
+                        <p id="departureTime9"></p>
+                        <p id="departureMin9" class="departureMins"></p>
+                    </li>
+                    <li id="departure-time2">
+                        <img src="busImg/school-bus.svg" alt="icon picture depicting a bus">
+                        <p id="busInfo10" class="bus-number"></p>
+                        <p id="departureTime10"></p>
+                        <p id="departureMin10" class="departureMins"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--------------------END BUSES---------------->
+
+        <script src="script.js"></script>
+</body>
+
+</html>
