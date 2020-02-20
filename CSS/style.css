@@ -1,0 +1,147 @@
+
+/*********************
+    ALL-ELEMENT
+**********************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*********************
+    GLOW- EFFECT
+**********************/
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-variant: small-caps;
+    text-decoration: underline;
+
+  }
+  
+  @keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+  }
+
+
+/*********************
+    Main-Layout : FLEX
+**********************/
+
+.flex{
+    display: flex;
+    height: 100vh;
+
+
+}
+
+.flex div{
+    border: black 0.3px solid;
+    
+}
+
+.inner {
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    width: 300px;
+
+    height: 100vh;
+
+}
+
+/*********************
+        WEATHER
+*********************/
+.weather {
+    display: flex;
+    color: black;
+    background-color: black;
+    flex: auto;
+}
+
+
+.day{
+    text-align: center;
+    align-items: center;
+    padding: 16px;
+    flex: 1;
+
+}
+
+.glow div{
+    border: solid 2px;
+    border-radius: 50%;
+    flex: 2;
+}
+
+/*********************
+         NASA
+*********************/
+
+.nasa{
+    height:100vh;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+}
+
+#title-text{
+    flex: 1;
+}
+
+#daily-fact{
+
+    flex: 2;
+}
+
+
+#nasa-img{
+height: 80%;
+width: 300px;
+
+}
+
+/*
+
+.thumbnail :hover{
+    scale:(1.5); 
+    transform:scale(1.5);
+    margin-left: 20%;
+    padding-bottom: 20%;
+   
+}
+/*
+
+
+
+/*********************
+        News
+*********************/
+.news{
+    background-color: black;
+    color: white;
+    flex: 2;
+    text-align: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.toggle{
+    color: black;
+}

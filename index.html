@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+
     <title>Magic Mirror</title>
 </head>
 
@@ -203,7 +205,119 @@
             </div>
         </div>
         <!--------------------END BUSES---------------->
+        <div class="container flex">
 
+            <!--NEWS-->
+            <div class="inner news">
+                <div class="button-news">
+                    <button class="toggle glow" id="toggle-news">News</button>
+                </div>
+                <ul class="news-article">
+                    <li>
+                        <article>
+
+                            <h4 id="title-text0" class="title glow"></h4>
+                            <p id="news-text0" class="bread"></p>
+                            <a href="" id="news-url0"></a>
+                            <img src="" alt="" id="news-img0" class="" height=" 100%" width="100%">
+
+
+
+                        </article>
+                    </li>
+                </ul>
+
+
+                <ul class="news-article">
+                    <li>
+                        <h4 id="title-text1" class="title glow"></h4>
+                        <p id="news-text1" class="bread"></p>
+                        <a href="" id="news-url1"></a>
+
+                        <img src="" alt="" id="news-img1" class="" height=" 100%" width="100%">
+
+
+                    </li>
+                </ul>
+
+
+                <ul class="news-article">
+                    <li>
+                        <h4 id="title-text2" class="title glow"></h4>
+                        <p id="news-text2" class="bread"></p>
+                        <a href="" id="news-url2"></a>
+                        <img src="" alt="" id="news-img2" class="" height=" 100%" width="100%">
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <!--WEATHER-->
+
+            <div class="inner weather">
+                <div class="button-weather">
+                    <button class="toggle glow" id="toggle-weather">Weather</button>
+                </div>
+                <div class="day" id="day1">
+                    <p class="day-text glow" id="index0"></p>
+                    <img src="" alt="" class="weatherIMG" id="picture0" height="30 px" width="30px">
+                    <p class="highest-text glow" id="highest0"></p>
+                    <p class="lowest-text glow" id="lowest0"></p>
+                </div>
+                <div class="day" id="day2">
+                    <p class="day-text glow" id="index1"></p>
+                    <img src="" alt="" class="weatherIMG" id="picture1" height="30 px" width="30px">
+                    <p class="highest-text glow" id="highest1"></p>
+                    <p class="lowest-text glow" id="lowest1"></p>
+                </div>
+                <div class="day" id="day3">
+                    <p class="day-text glow" id="index2"></p>
+                    <img src="" alt="" class="weatherIMG" id="picture2" height="30 px" width="30px">
+                    <p class="highest-text glow" id="highest2"></p>
+                    <p class="lowest-text glow" id="lowest2"></p>
+                </div>
+                <div class="day" id="day4">
+                    <p class="day-text glow" id="index3"></p>
+                    <img src="" alt="" class="weatherIMG" id="picture3" height="30 px" width="30px">
+                    <p class="highest-text glow" id="highest3"></p>
+                    <p class="lowest-text glow" id="lowest3"></p>
+                </div>
+                <div class="day" id="day5">
+                    <p class="day-text glow" id="index4"></p>
+                    <img src="" alt="" class="weatherIMG" id="picture4" height="30 px" width="30px">
+                    <p class="highest-text glow" id="highest4"></p>
+                    <p class="lowest-text glow" id="lowest4"></p>
+                </div>
+
+
+            </div>
+            <!--NASA-->
+
+            <div class="inner nasa">
+                <div class="button-nasa">
+                    <button class="toggle glow" id="toggle-nasa">Nasa</button>
+                </div>
+                <div class="nasa-box">
+                    <h2 id="title-text" class="title glow"></h2>
+                    <p id="daily-fact" class="bread"></p>
+
+                    <img src="" alt="" id="nasa-img" class="">
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <script src="/JS/weather.js"></script>
+        <script src="/JS/news.js"></script>
+        <script src="/JS/nasa.js"></script>
         <script src="script.js"></script>
 </body>
 
