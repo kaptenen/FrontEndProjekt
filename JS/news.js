@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $("#toggle-news").click(function () {
+        $(".news-article").slideToggle();
+    });
+});
 
 function retrieveNews(){
     let url = 'https://api.currentsapi.services/v1/search?' +

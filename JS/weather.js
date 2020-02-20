@@ -1,20 +1,12 @@
 $(document).ready(function () {
     $("#toggle-weather").click(function () {
-        $(".day").slideToggle();
+        $(".current-weather").slideToggle();
     });
 });
 
-$(document).ready(function () {
-    $("#toggle-nasa").click(function () {
-        $(".nasa-box").slideToggle();
-    });
-});
 
-$(document).ready(function () {
-    $("#toggle-news").click(function () {
-        $(".news-article").slideToggle();
-    });
-});
+
+
 
 
 const weekdays = [

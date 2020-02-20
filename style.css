@@ -98,6 +98,29 @@ body{
                             END
 ******************************************************/
 
+
+
+/*****************************************************
+                    Clock- Start
+******************************************************/
+
+.time{
+    border: white solid 1px;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: inset 0px 0px 21px 7px white;
+}
+
+#current-time{
+    font-size: 90px;
+
+}
+
+#date{
+    font-size: 15px;
+}
 /*****************************************************
                        BUS INFORMATION
 ******************************************************/

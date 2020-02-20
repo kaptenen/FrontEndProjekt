@@ -1,5 +1,9 @@
 
-     
+     $(document).ready(function () {
+        $("#toggle-nasa").click(function () {
+            $(".nasa-box").slideToggle();
+        });
+    });
 function retrieveFromNasa(){
     let url = "https://api.nasa.gov/planetary/apod?api_key=qvVStNIopTSTIQ5NX5beqnSylMtHljMzaHfbqNZc";
     let request = new XMLHttpRequest();
