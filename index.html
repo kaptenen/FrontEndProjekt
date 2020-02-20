@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
     <title>Magic Mirror</title>
 </head>
@@ -15,33 +16,88 @@
 <body>
     <!--------------------CURRENT WEATHER----------------->
     <div class="current-weather">
-
-        <div class="wind-water">
-            <img src="weatherImg/wind.svg" alt="Wind icon" height="30px" width="30px">
-            <h4 id="wind"></h4>
-            <img src="weatherImg/water.svg" alt="Water temp icon" height="30px" width="30px">
-            <h4 id="water"></h4>
+        <div class="button-weather">
+            <button class="toggle glow" id="toggle-weather">Weather</button>
         </div>
 
-        <div class="sunrise-sunset">
-            <div class="sunrise">
-                <img src="weatherImg/sunrise.svg" alt="Sunrise icon" height="30px" width="30px">
-                <p id="sunrise"></p>
+
+        <div class="top-row">
+            <h2 id="city-name"></h2>
+            <div class="wind wind-water">
+                <img src="weatherImg/wind.svg" alt="Wind icon" height="30px" width="30px">
+                <h4 id="wind"></h4>
             </div>
-            <div class="sunset">
-                <img src="weatherImg/sunset.svg" alt="Sunset icon" height="30px" width="30px">
-                <p id="sunset"></p>
+            <div class="water wind-water">
+                <img src="weatherImg/water.svg" alt="Water temp icon" height="30px" width="30px">
+                <h4 id="water">4</h4>
             </div>
         </div>
 
-        <h2 id="city-name"></h2>
-        <h2 id="temp"></h2>
-        <h2 id="weather"></h2>
-        <div class="weather-icon">
-            <img id="current-weather" src="" alt="Current weather icon" height="50px" width="50px">
-        </div>
-        <h2 id="weather-description"></h2>
 
+        <div class="middle-row">
+            <div class="weather-icon">
+                <img id="current-weather" src="" alt="Current weather icon">
+            </div>
+            <h2 id="temp"></h2>
+
+            <div class="right">
+                <div class="sunrise sun-icon">
+                    <img src="weatherImg/sunrise.svg" alt="Sunrise icon">
+                    <p id="sunrise"></p>
+                </div>
+                <div class="sunset sun-icon">
+                    <img src="weatherImg/sunset.svg" alt="Sunset icon">
+                    <p id="sunset"></p>
+                </div>
+                <!-- <h2 id="weather"></h2> -->
+            </div>
+
+        </div>
+        <div class="weather-description">
+            <h2 id="weather-description"></h2>
+        </div>
+
+
+
+
+        <!--5 DAY WEATHER-->
+
+        <div class="inner weather">
+
+            <div class="day" id="day1">
+                <p class="day-text glow" id="index0"></p>
+                <img src="" alt="" class="weatherIMG" id="picture0" height="30 px" width="30px">
+                <p class="highest-text glow" id="highest0"></p>
+                <p class="lowest-text glow" id="lowest0"></p>
+            </div>
+            <div class="day" id="day2">
+                <p class="day-text glow" id="index1"></p>
+                <img src="" alt="" class="weatherIMG" id="picture1" height="30 px" width="30px">
+                <p class="highest-text glow" id="highest1"></p>
+                <p class="lowest-text glow" id="lowest1"></p>
+            </div>
+            <div class="day" id="day3">
+                <p class="day-text glow" id="index2"></p>
+                <img src="" alt="" class="weatherIMG" id="picture2" height="30 px" width="30px">
+                <p class="highest-text glow" id="highest2"></p>
+                <p class="lowest-text glow" id="lowest2"></p>
+            </div>
+            <div class="day" id="day4">
+                <p class="day-text glow" id="index3"></p>
+                <img src="" alt="" class="weatherIMG" id="picture3" height="30 px" width="30px">
+                <p class="highest-text glow" id="highest3"></p>
+                <p class="lowest-text glow" id="lowest3"></p>
+            </div>
+            <div class="day" id="day5">
+                <p class="day-text glow" id="index4"></p>
+                <img src="" alt="" class="weatherIMG" id="picture4" height="30 px" width="30px">
+                <p class="highest-text glow" id="highest4"></p>
+                <p class="lowest-text glow" id="lowest4"></p>
+            </div>
+        </div>
+
+
+        <!--END 5 DAY WEATHER-->
     </div>
     <!--------------------END CURRENT WEATHER---------------->
 
@@ -253,45 +309,7 @@
 
 
             </div>
-            <!--WEATHER-->
 
-            <div class="inner weather">
-                <div class="button-weather">
-                    <button class="toggle glow" id="toggle-weather">Weather</button>
-                </div>
-                <div class="day" id="day1">
-                    <p class="day-text glow" id="index0"></p>
-                    <img src="" alt="" class="weatherIMG" id="picture0" height="30 px" width="30px">
-                    <p class="highest-text glow" id="highest0"></p>
-                    <p class="lowest-text glow" id="lowest0"></p>
-                </div>
-                <div class="day" id="day2">
-                    <p class="day-text glow" id="index1"></p>
-                    <img src="" alt="" class="weatherIMG" id="picture1" height="30 px" width="30px">
-                    <p class="highest-text glow" id="highest1"></p>
-                    <p class="lowest-text glow" id="lowest1"></p>
-                </div>
-                <div class="day" id="day3">
-                    <p class="day-text glow" id="index2"></p>
-                    <img src="" alt="" class="weatherIMG" id="picture2" height="30 px" width="30px">
-                    <p class="highest-text glow" id="highest2"></p>
-                    <p class="lowest-text glow" id="lowest2"></p>
-                </div>
-                <div class="day" id="day4">
-                    <p class="day-text glow" id="index3"></p>
-                    <img src="" alt="" class="weatherIMG" id="picture3" height="30 px" width="30px">
-                    <p class="highest-text glow" id="highest3"></p>
-                    <p class="lowest-text glow" id="lowest3"></p>
-                </div>
-                <div class="day" id="day5">
-                    <p class="day-text glow" id="index4"></p>
-                    <img src="" alt="" class="weatherIMG" id="picture4" height="30 px" width="30px">
-                    <p class="highest-text glow" id="highest4"></p>
-                    <p class="lowest-text glow" id="lowest4"></p>
-                </div>
-
-
-            </div>
             <!--NASA-->
 
             <div class="inner nasa">

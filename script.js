@@ -18,7 +18,7 @@ function CurrentWeatherAPI() {
     let t = data.main.temp;
     let temperature = parseFloat(t.toFixed(1));
 
-    document.getElementById("temp").innerHTML = `${temperature} °C`;
+    document.getElementById("temp").innerHTML = `${temperature}°C`;
 
     let weatherDescription = data.weather[0].main;
     document.getElementById(
