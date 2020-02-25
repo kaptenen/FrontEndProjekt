@@ -1,7 +1,6 @@
 CurrentWeatherAPI();
 DayTime();
 BusInformation();
-
 //waterTemp();
 
 function CurrentWeatherAPI() {
@@ -28,8 +27,7 @@ function CurrentWeatherAPI() {
     let weatherType = data.weather[0].id;
 
     if (weatherType >= 200 && weatherType <= 232) {
-      document.getElementById("current-weather").src =
-        "weatherImg/thunderstorm.svg";
+      document.getElementById("current-weather").src = "weatherImg/thunderstorm.svg";
     } else if (weatherType >= 300 && weatherType <= 531) {
       document.getElementById("current-weather").src = "weatherImg/rain.svg";
     } else if (weatherType >= 600 && weatherType <= 622) {
@@ -110,6 +108,15 @@ function DayTime() {
 }
 
 function BusInformation() {
+
+  $(".EriksbergsdockanToggle").click(function () {
+    $(".EriksbergsdockanToggle-hidden").toggle()
+  });
+
+  $(".EriksbergstorgetToggle").click(function () {
+    $(".EriksbergstorgetToggle-hidden").toggle()
+  });
+
   let urls = [
     "https://api.resrobot.se/v2/departureBoard?key=2012d673-a042-4d5f-ac58-84e72f4fd953&id=740075520&maxJourneys=11&direction=740059197&passlist=0&format=json", //Eriksbergsdockan
     "https://api.resrobot.se/v2/departureBoard?key=2012d673-a042-4d5f-ac58-84e72f4fd953&id=740059199&maxJourneys=11&direction=740015585&passlist=0&products=128%20&format=json"
@@ -129,10 +136,6 @@ function BusInformation() {
       let busInfo = data.Departure;
       switch (i) {
         case 0: //Eriksbergsdockan
-
-
-
-
           for (let i = 0; i < busInfo.length; i++) {
             let depTime = busInfo[i].time
             let depDate = new Date(busInfo[i].date + " " + depTime);
@@ -188,7 +191,6 @@ function BusInformation() {
           break;
       }
     };
-
     request[i].send();
   }
 }

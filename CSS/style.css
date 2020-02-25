@@ -21,7 +21,6 @@ body{
     animation: glow 1s ease-in-out infinite alternate;
     font-variant: small-caps;
     text-decoration: underline;
-
 }
   
 @keyframes glow{
@@ -51,7 +50,6 @@ body{
 .nasa {
     display: flex;
     align-items: center;
-
 }
   
 #nasa-img {
@@ -69,7 +67,6 @@ body{
 }
 
 .current-weather{
-    border: solid cyan 1px;
     position: absolute;
     margin-left: 70vw;
     float: right;
@@ -103,7 +100,6 @@ body{
     display: flex;  
     justify-content: flex-end;
     padding-right: 10px;
-
 }
 
 .middle-row{
@@ -117,19 +113,21 @@ body{
     font-size: 50px;
     padding: 30px 30px 0px 30px;
     height: 20px;
-
 }
 
 #current-weather{
     width: 60px;
     height: 60px;
-
 }
 
 .weather-description{
     text-align: end;
     padding-right: 10px;
 }
+
+/*****************************************************
+                            END
+******************************************************/
 
 /*****************************************************
                        5 DAY WEATHER
@@ -148,7 +146,6 @@ body{
     align-items: flex-end;
     text-align: center;
     align-items: center;
-
 }
 
 
@@ -174,12 +171,18 @@ body{
 
 #current-time{
     font-size: 90px;
-
 }
 
 #date{
     font-size: 15px;
 }
+
+/*****************************************************
+                            END
+******************************************************/
+
+
+
 /*****************************************************
                        BUS INFORMATION
 ******************************************************/
@@ -227,7 +230,6 @@ body{
     color: white;
     flex: 2;
     text-align: center;
-
 }
 
 ul{
@@ -237,4 +239,8 @@ ul{
 .toggle{
     color: black;
 }
+
+/*****************************************************
+                            END
+******************************************************/
 
