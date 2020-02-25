@@ -1,10 +1,11 @@
 
-     $(document).ready(function () {
-        $("#toggle-nasa").click(function () {
-            $(".nasa-box").slideToggle();
-        });
+$(document).ready(function () {
+    $("#toggle-nasa").click(function () {
+        $(".nasa-box").slideToggle();
     });
-function retrieveFromNasa(){
+});
+
+function retrieveDataNasa() {
     let url = "https://api.nasa.gov/planetary/apod?api_key=qvVStNIopTSTIQ5NX5beqnSylMtHljMzaHfbqNZc";
     let request = new XMLHttpRequest();
     request.open("GET", url);
@@ -12,31 +13,20 @@ function retrieveFromNasa(){
     request.onload = function () {
         let data = JSON.parse(request.responseText);
 
-        document.getElementById("title-text").innerHTML = `${data.title}`
-        document.getElementById("daily-fact").innerHTML = `${data.explanation}`
-        document.getElementById("nasa-img").src = `${data.hdurl}`
-
-        
-
+        displayData(data);
     };
 
     request.send();
-    
 }
 
-
-
-function displayDataFromNasa(){
-    retrieveFromNasa();
-    
+function displayData(data) {
+    document.getElementById("title-text").innerHTML = `${data.title}`
+    document.getElementById("daily-fact").innerHTML = `${data.explanation}`
+    document.getElementById("nasa-img").src = `${data.hdurl}`
 }
-
-
-
-
 
 function main() {
-    displayDataFromNasa();
+    retrieveDataNasa();
 }
 
 main();
