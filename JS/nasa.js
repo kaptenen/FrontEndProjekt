@@ -6,27 +6,36 @@ $(document).ready(function () {
 });
 
 function retrieveDataNasa() {
-    let url = "https://api.nasa.gov/planetary/apod?api_key=qvVStNIopTSTIQ5NX5beqnSylMtHljMzaHfbqNZc";
+    let url = //APIKEY here;
     let request = new XMLHttpRequest();
     request.open("GET", url);
 
     request.onload = function () {
-        let data = JSON.parse(request.responseText);
 
-        displayData(data);
+        let nasa = displayData(request);
+        document.getElementById("titleNasa-text").innerHTML = nasa._title;
+        document.getElementById("daily-fact").innerHTML = nasa._description;
+        document.getElementById("nasa-img").src = nasa._image;
     };
-
     request.send();
-}
+};
 
-function displayData(data) {
-    document.getElementById("titleNasa-text").innerHTML = `${data.title}`
-    document.getElementById("daily-fact").innerHTML = `${data.explanation}`
-    document.getElementById("nasa-img").src = `${data.hdurl}`
-}
+function displayData(request) {
+    let data = JSON.parse(request.responseText);
+
+    let title = `${data.title}`;
+    let description = `${data.explanation}`;
+    let image = `${data.hdurl}`;
+
+    return {
+        _title: title,
+        _description: description,
+        _image: image
+    };
+};
 
 function main() {
     retrieveDataNasa();
-}
+};
 
 main();

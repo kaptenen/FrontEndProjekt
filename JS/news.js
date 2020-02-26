@@ -4,33 +4,37 @@ $(document).ready(function () {
     });
 });
 
-function retrieveDataNews(){
-    let url = 'https://api.currentsapi.services/v1/search?' +
-    'keywords=youtube&language=en&' + 
-    'apiKey=SnN-k-WJcXrcxTxI7-ZN0KZv7ioW_U3PDenjwI_f-UDLSx2k';
-    
+function retrieveDataNews() {
+    let url = //APIKEY here
+
     let request = new XMLHttpRequest();
     request.open("GET", url);
-
     request.onload = function () {
-        let data = JSON.parse(request.responseText);
-        displayNews(data);
-    }; 
+        let news = displayNews(request);
 
+        document.getElementById("titleNews-text").innerHTML = news._title;
+        document.getElementById("news-text").innerHTML = news._description;
+        document.getElementById("news-img").src = news._image;
+    };
     request.send();
 }
 
-function displayNews(data){
-    document.getElementById("titleNews-text").innerHTML = `${data.news[0].title}`
-    document.getElementById("news-text").innerHTML = `${data.news[0].description}`
-    document.getElementById("news-img").src = `${data.news[0].image}`
-   /* 
-   document.getElementById("news-url0").innerHTML = `${data.news[1].url}` 
-   */
-}
+function displayNews(request) {
+    let data = JSON.parse(request.responseText);
+
+    let title = `${data.news[0].title}`;
+    let description = `${data.news[0].description}`;
+    let image = `${data.news[0].image}`;
+
+    return {
+        _title: title,
+        _description: description,
+        _image: image
+    };
+};
 
 function main() {
     retrieveDataNews();
-}
+};
 
 main();

@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let url =
-        "http://api.openweathermap.org/data/2.5/weather?id=2711537&units=metric&appid=525541f98425fa99c0ea37227ef874dc";
+    let url = //APIKEY here
+    
     let request = new XMLHttpRequest();
     request.open("GET", url);
 
@@ -11,13 +11,10 @@ $(document).ready(function () {
 
         let t = data.main.temp;
         let temperature = parseFloat(t.toFixed(1));
-
         document.getElementById("temp").innerHTML = `${temperature}°C`;
 
         let weatherDescription = data.weather[0].main;
-        document.getElementById(
-            "weather-description"
-        ).innerHTML = weatherDescription;
+        document.getElementById("weather-description").innerHTML = weatherDescription;
 
         let weatherType = data.weather[0].id;
 

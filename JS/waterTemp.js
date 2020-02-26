@@ -31,11 +31,10 @@ let h = dt.getHours();
 let APIArray = [];
 
 fetch(
-    `https://api.stormglass.io/v1/weather/point?lat=${lat}&lng=${lng}&params=${params}&start=${readingStart}&end=${readingEnd}`,
+    //APIKEY here
     {
         headers: {
-            Authorization:
-                "967278d4-450f-11ea-8bd6-0242ac130002-967279e2-450f-11ea-8bd6-0242ac130002"
+            Authorization: //AUTHKEY
         }
     }
 )

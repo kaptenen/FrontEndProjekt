@@ -34,8 +34,17 @@
     height: 30px;
 }
 
+.water{
+    margin-left: 5px;
+}
+
 .wind-water{
     text-align: center;
+}
+
+.wind-water img{
+    width: 30px;
+    height: 30px;
 }
 
 .top-row{
@@ -67,11 +76,6 @@
     padding-right: 10px;
 }
 
-.wind-water img{
-    width: 30px;
-    height: 30px;
-}
-
 /*****************************************************
                             END
 ******************************************************/
@@ -94,8 +98,6 @@
     text-align: center;
     align-items: center;
 }
-
-
 
 /*****************************************************
                             END

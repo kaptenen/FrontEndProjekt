@@ -1,4 +1,4 @@
-const mounts = [
+const months = [
     "January",
     "February",
     "March",
@@ -18,11 +18,11 @@ let date = time.getDate();
 let hours = time.getHours();
 let minutes = time.getMinutes();
 let m = time.getMonth();
-let mount = mounts[m];
+let month = months[m];
 
 if (minutes < 10) {
     minutes = "0" + minutes;
-}
+};
 
 document.getElementById("current-time").innerHTML = `${hours}:${minutes}`;
-document.getElementById("date").innerHTML = `${date} ${mount}`;
+document.getElementById("date").innerHTML = `${date} ${month}`;
