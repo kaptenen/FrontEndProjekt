@@ -24,47 +24,47 @@ function calculateDayOfWeek(unixEpoch) {
 function retrieveWeatherIcon(weatherTypeID, weatherIcon) {
 
     if (weatherTypeID > 0 && weatherTypeID < 5) {
-        weatherIcon = "weatherImg/sun.svg";
+        weatherIcon = "IMG/weatherImg/sun.svg";
 
     }
     else if (weatherTypeID == 5 || weatherTypeID == 11) {
-        weatherIcon = "weatherImg/haze.svg";
+        weatherIcon = "IMG/weatherImg/haze.svg";
 
     }
     else if (weatherTypeID > 5 && weatherTypeID < 9) {
-        weatherIcon = "weatherImg/cloud.svg";
+        weatherIcon = "IMG/weatherImg/cloud.svg";
 
     }
     else if (weatherTypeID > 11 && weatherTypeID < 15 || weatherTypeID == 18) {
-        weatherIcon = "weatherImg/rain.svg";
+        weatherIcon = "IMG/weatherImg/rain.svg";
 
     }
     else if (weatherTypeID > 14 && weatherTypeID < 18) {
-        weatherIcon = "weatherImg/thunderstorm.svg";
+        weatherIcon = "IMG/weatherImg/thunderstorm.svg";
 
     }
     else if (weatherTypeID > 19 && weatherTypeID < 22 || weatherTypeID == 32) {
-        weatherIcon = "weatherImg/wind.svg";
+        weatherIcon = "IMG/weatherImg/wind.svg";
 
     }
     else if (weatherTypeID > 21 && weatherTypeID < 30) {
-        weatherIcon = "weatherImg/snow.svg";
+        weatherIcon = "IMG/weatherImg/snow.svg";
 
     }
     else if (weatherTypeID == 30) {
-        weatherIcon = "weatherImg/hot.svg";
+        weatherIcon = "IMG/weatherImg/hot.svg";
 
     }
     else if (weatherTypeID == 31) {
-        weatherIcon = "weatherImg/cold.svg";
+        weatherIcon = "IMG/weatherImg/cold.svg";
 
     }
     else if (weatherTypeID > 32 && weatherTypeID < 38) {
-        weatherIcon = "weatherImg/moon.svg";
+        weatherIcon = "IMG/weatherImg/moon.svg";
 
     }
     else if (weatherTypeID > 38 && weatherTypeID < 44) {
-        weatherIcon = "weatherImg/moon(1).svg";
+        weatherIcon = "IMG/weatherImg/moon(1).svg";
 
     }
 
