@@ -20,7 +20,7 @@ function retrieveDataNasa() {
 }
 
 function displayData(data) {
-    document.getElementById("title-text").innerHTML = `${data.title}`
+    document.getElementById("titleNasa-text").innerHTML = `${data.title}`
     document.getElementById("daily-fact").innerHTML = `${data.explanation}`
     document.getElementById("nasa-img").src = `${data.hdurl}`
 }

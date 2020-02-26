@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#toggle-news").click(function () {
-        $(".news-article").slideToggle();
+        $(".news-box").slideToggle();
     });
 });
 
@@ -21,9 +21,9 @@ function retrieveDataNews(){
 }
 
 function displayNews(data){
-    document.getElementById("title-text0").innerHTML = `${data.news[1].title}`
-    document.getElementById("news-text0").innerHTML = `${data.news[1].description}`
-    document.getElementById("news-img0").src = `${data.news[1].image}`
+    document.getElementById("titleNews-text").innerHTML = `${data.news[0].title}`
+    document.getElementById("news-text").innerHTML = `${data.news[0].description}`
+    document.getElementById("news-img").src = `${data.news[0].image}`
    /* 
    document.getElementById("news-url0").innerHTML = `${data.news[1].url}` 
    */

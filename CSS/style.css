@@ -41,20 +41,10 @@ body{
     width: 80px;
     font-size: 15px;
     border-radius: 15%;
+    color: black;
 }
 
-/*****************************************************
-                            NASA
-******************************************************/
 
-.nasa {
-    display: flex;
-    align-items: center;
-}
-  
-#nasa-img {
-    width: 100%;
-}
 
 /*****************************************************
                        CURRENT WEATHER
@@ -227,23 +217,59 @@ body{
                             END
 ******************************************************/
 
+/*****************************************************
+                            NASA
+******************************************************/
+
+.nasa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+.nasa-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#nasa-img {
+    padding-top: 20px;
+    width: 50%;
+}
+
+
 /*********************
         News
 *********************/
 .news{
-    background-color: black;
-    color: white;
-    flex: 2;
+    display:flex;
+    justify-content: center;
     text-align: center;
+    margin-top: 50px;
+
+
 }
 
-ul{
-    list-style: none;
+.news-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
-.toggle{
-    color: black;
+#news-img{
+    padding-top: 20px;
+    width: 50%;
 }
+
+
 
 /*****************************************************
                             END
