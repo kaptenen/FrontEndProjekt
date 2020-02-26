@@ -1,0 +1,32 @@
+/*********************
+        News
+*********************/
+.news{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+.news-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#news-img{
+    padding-top: 20px;
+    width: 50%;
+}
+
+
+
+/*****************************************************
+                            END
+******************************************************/
+

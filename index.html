@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/mainWindow.css">
+    <link rel="stylesheet" href="/CSS/buses.css">
+    <link rel="stylesheet" href="/CSS/dayTime.css">
+    <link rel="stylesheet" href="/CSS/nasa.css">
+    <link rel="stylesheet" href="/CSS/weather.css">
+    <link rel="stylesheet" href="/CSS/news.css">
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
     <title>Magic Mirror</title>
@@ -19,7 +25,7 @@
     <div class="button-weather">
         <button class="toggle glow" id="toggle-weather">Weather</button>
     </div>
-    <div class="current-weather">
+    <div class="current-weather glow">
         <div class="top-row">
             <h2 id="city-name"></h2>
             <div class="wind wind-water">
@@ -50,7 +56,7 @@
             </div>
         </div>
 
-        <div class="weather-description">
+        <div class="weather-description glow">
             <h2 id="weather-description"></h2>
         </div>
 
@@ -100,7 +106,7 @@
     <!--------------------END CURRENT WEATHER---------------->
 
     <!--------------------TIME---------------->
-    <div class="time">
+    <div class="time glow">
         <h2 id="current-time"></h2>
         <h3 id="date"></h3>
     </div>
